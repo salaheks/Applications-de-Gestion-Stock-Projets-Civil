@@ -1,0 +1,11 @@
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\classes\Categorie.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\classes\Commande.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\classes\LigneCommande.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\classes\Produit.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\dao\IDao.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\service\CategorieService.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\service\CommandeService.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\service\LigneCommandeService.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\service\ProduitService.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\test\TestGestionStock.java
+C:\Users\SalahPc\Desktop\gestion-stock\src\main\java\ma\projet\util\HibernateUtil.java
