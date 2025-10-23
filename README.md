@@ -27,11 +27,11 @@ Ce référentiel contient **trois applications de gestion** développées en **J
 Gestion des naissances, mariages, décès et recherches avancées.
 
 ### 2️⃣ Gestion de Projets
-![Gestion Projets](https://via.placeholder.com/600x300?text=Gestion+Projets)  
+![Gestion Projets](gestion-projets/Screen/Test_App_projet.png)
 Suivi des tâches, employés et projets avec dates de réalisation.
 
 ### 3️⃣ Gestion de Stock
-![Gestion Stock](https://via.placeholder.com/600x300?text=Gestion+Stock)  
+![Gestion Stock](gestion-stock/Screen/Test_App_Stock.png)
 Gestion des produits, catégories, commandes et inventaire.
 
 > 💡 Remplace les liens `https://via.placeholder.com/...` par de vraies captures d’écran ou GIFs de tes applications pour un rendu plus professionnel.
