@@ -1,8 +1,7 @@
 # Applications-de-Gestion-Stock-Projets-Civil
-📂 Aperçu du Référentiel
+Ce référentiel contient trois applications de gestion développées en Java avec Spring Framework et Hibernate. Chaque application suit l’architecture DAO-Service avec Spring pour la gestion des transactions et Hibernate pour la persistance des données.
 
-Ce référentiel contient trois applications de gestion développées en Java avec Spring Framework et Hibernate.
-
+🗂 Applications Incluses
 1️⃣ Gestion de l'État Civil (gestion-etat-civil/)
 
 Application pour gérer les registres d’état civil : naissances, mariages, décès.
@@ -45,13 +44,11 @@ Recherche de produits par critères
 
 Affichage des produits commandés entre deux dates
 
-🛠️ Technologies Utilisées
-
-Stack Principal :
+🛠 Technologies Utilisées
 
 Java 8/11
 
-Spring Framework 5.3.21 (IoC, Transactions)
+Spring Framework 5.3.21
 
 Hibernate 5.6.15.Final
 
@@ -59,55 +56,58 @@ Maven
 
 MySQL 8.0.33
 
-Dépendances Spring :
-
-spring-context, spring-orm, spring-tx, spring-test
-
-Autres outils :
-
 HikariCP 5.0.1 (pool de connexions)
 
 JUnit 4.13.2
 
-MySQL Connector 8.0.33
-
 🏗️ Architecture
 
-Chaque application suit l’architecture couche DAO-Service :
+Couches DAO-Service avec Spring et Hibernate
 
-├── classes/   # Entités JPA/Hibernate
-├── dao/       # Interfaces DAO
-├── service/   # Services métier (@Service + @Transactional)
-├── config/    # Configuration Spring (@Configuration)
-├── util/      # Utilitaires (ex: HibernateUtil)
-└── test/      # Classes de tests
+Annotations Spring : @Service, @Transactional, @Autowired, @Configuration
+
+Gestion déclarative des transactions
+
+Pool de connexions optimisé (HikariCP)
+
+Tests unitaires et Spring Test
+
+⚡ Installation et Lancement
+Prérequis
+
+Java 8+
+
+Maven 3.6+
+
+MySQL 8.0+ (port 3307)
+
+Compilation
+cd gestion-etat-civil/  # ou gestion-projets/ ou gestion-stock/
+mvn clean compile
+
+Exécution des Tests
+mvn test
+
+Lancement de l’Application
+
+Via Maven :
+
+mvn exec:java -Dexec.mainClass="ma.projet.Application"
 
 
-Configuration Spring :
+Via Java :
 
-Annotation-based (@Configuration, @ComponentScan)
+java -cp target/classes:$(mvn dependency:build-classpath -Dmdep.outputFile=/dev/stdout -q) ma.projet.Application
 
-Gestion déclarative des transactions (@EnableTransactionManagement)
+🧪 Tests
 
-Injection de dépendances automatique (@Autowired)
+SpringContextTest : Vérifie le contexte Spring
 
-Configuration MySQL :
+SpringHibernateTest : Test de l’intégration Spring + Hibernate
 
-Port : 3307
+Tests unitaires des services avec injection de dépendances
 
-Base de données :
-
-gestion-etat-civil → gestion_etat_civil
-
-gestion-projets → gestion_projets
-
-gestion-stock → gestion_stock
-
-HikariCP : pool optimisé pour les performances
-
-Hibernate : hibernate.hbm2ddl.auto=create-drop (ou update pour prod)
-
-⚡ Migration Hibernate → Spring + Hibernate
+✅ Migration Hibernate → Spring + Hibernate
 
 Avant (Hibernate seul) :
 
@@ -140,59 +140,42 @@ public class MyService {
 
 
 Avantages :
-✅ Transactions déclaratives
-✅ Injection automatique
-✅ Pool HikariCP performant
-✅ Tests simplifiés
-✅ Code plus lisible et maintenable
 
-🧪 Tests
+Transactions déclaratives
 
-SpringContextTest : Vérifie le contexte Spring
+Injection automatique
 
-SpringHibernateTest : Test de l’intégration Spring + Hibernate
+Code plus lisible et maintenable
 
-Tests unitaires des services
+Tests simplifiés
 
-📌 Installation et Lancement
+🤝 Contribution
 
-Prérequis :
+Fork le projet
 
-Java 8+
+Créez une branche feature :
 
-Maven 3.6+
-
-MySQL 8.0+ (port 3307)
-
-Compilation :
-
-cd gestion-etat-civil/  # ou gestion-projets/ ou gestion-stock/
-mvn clean compile
+git checkout -b feature/nouvelle-fonctionnalité
 
 
-Exécution des Tests :
+Committez vos changements :
 
-mvn test
-
-
-Lancement de l’Application :
-
-Via Maven :
-
-mvn exec:java -Dexec.mainClass="ma.projet.Application"
+git commit -m "Ajout nouvelle fonctionnalité"
 
 
-Via Java :
+Push vers la branche :
 
-java -cp target/classes:$(mvn dependency:build-classpath -Dmdep.outputFile=/dev/stdout -q) ma.projet.Application
+git push origin feature/nouvelle-fonctionnalité
 
-📝 Structure du Projet Exemple (gestion-etat-civil/)
-gestion-etat-civil/
-├── src/main/java/ma/projet/
-│   ├── beans/        # Entités : Femme, Homme, Mariage
-│   ├── service/      # Services Spring
-│   ├── config/       # SpringConfig.java
-│   └── Application.java
-├── src/main/resources/
-│   └── application.properties
-└── pom.xml
+
+Ouvrez une Pull Request
+
+Standards de code :
+
+Suivre les conventions Java
+
+Utiliser les annotations Spring
+
+Ajouter des tests pour les nouvelles fonctionnalités
+
+Documenter les nouvelles méthodes
