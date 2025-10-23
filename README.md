@@ -27,7 +27,7 @@ Ce référentiel contient **trois applications de gestion** développées en **J
 Gestion des naissances, mariages, décès et recherches avancées.
 
 ### 2️⃣ Gestion de Projets
-![Gestion Projets](gestion-projets/Screen/Test_App_projet.png)
+![Gestion Projets](gestion-projet/Screen/Test_App_projet.png)
 Suivi des tâches, employés et projets avec dates de réalisation.
 
 ### 3️⃣ Gestion de Stock
