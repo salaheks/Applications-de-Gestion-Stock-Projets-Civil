@@ -25,7 +25,7 @@ Ce référentiel contient **trois applications de gestion** développées en **J
 ![Gestion Stock](gestion-stock/Screen/Test_App_Stock.png)
 Gestion des produits, catégories, commandes et inventaire.
 ### 2️⃣ Gestion de Projets
-![Gestion Projets](gestion-projets/Screen/Test_App_ projet.png)
+![Gestion Projets](gestion-projets/Screen/Test_App_projet.png)
 Suivi des tâches, employés et projets avec dates de réalisation.
 ###  3️⃣Gestion de l'État Civil
 ![Gestion État Civil](gestion-etat-civil/Screen/Test_App_gestion-etat-civil.png)
