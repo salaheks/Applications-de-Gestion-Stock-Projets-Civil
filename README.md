@@ -21,19 +21,16 @@ Ce référentiel contient **trois applications de gestion** développées en **J
 ---
 
 ## 📸 Captures d’écran / Démonstration
-
-### 1️⃣ Gestion de l'État Civil
-![Gestion État Civil](gestion-etat-civil/Screen/Test_App_gestion-etat-civil.png)
-Gestion des naissances, mariages, décès et recherches avancées.
-
-
+## 1️⃣ Gestion de Stock
+![Gestion Stock](gestion-stock/Screen/Test_App_Stock.png)
+Gestion des produits, catégories, commandes et inventaire.
 ### 2️⃣ Gestion de Projets
 ![Gestion Projets](gestion-projets/Screen/Test_App_projet.png)
 Suivi des tâches, employés et projets avec dates de réalisation.
-
-### 3️⃣ Gestion de Stock
-![Gestion Stock](gestion-stock/Screen/Test_App_Stock.png)
-Gestion des produits, catégories, commandes et inventaire.
+###  3️⃣Gestion de l'État Civil
+![Gestion État Civil](gestion-etat-civil/Screen/Test_App_gestion-etat-civil.png)
+Gestion des naissances, mariages, décès et recherches avancées.
+#
 
 > 💡 Remplace les liens `https://via.placeholder.com/...` par de vraies captures d’écran ou GIFs de tes applications pour un rendu plus professionnel.
 
